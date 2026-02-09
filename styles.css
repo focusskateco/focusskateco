@@ -100,7 +100,7 @@ header::after {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   font-family: var(--font-head);
   text-transform: uppercase;
   letter-spacing: 0.08em;
