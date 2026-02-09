@@ -204,6 +204,69 @@ header {
   gap: 20px;
 }
 
+.media-card {
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: #0b0b0b;
+  box-shadow: var(--shadow);
+}
+
+.media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #0c0c0c;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #1c1c1c;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter {
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #0b0b0b;
+  display: grid;
+  gap: 14px;
+}
+
+.newsletter input {
+  background: #0a0a0a;
+  border: 1px solid #222;
+  color: var(--fg);
+  padding: 12px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
 .card {
   background: var(--bg-2);
   border: 1px solid var(--line);

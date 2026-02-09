@@ -33,24 +33,33 @@
   "shop": {
     "headline": "Shop",
     "subhead": "Decks and shirts. Tight drops. No clutter.",
+    "shopify_url": "https://focusskateco.myshopify.com",
+    "coming_soon_image": "/assets/coming-soon.svg",
+    "coming_soon_copy": "Full drop landing soon. Tap in to Shopify for early access.",
     "decks": [
       {
         "name": "Focus 01",
-        "size": "8.0",
+        "size": "8.25",
         "price": "$64",
-        "badge": "Classic"
+        "badge": "Classic",
+        "image": "/assets/coming-soon.svg",
+        "link": "https://focusskateco.myshopify.com"
       },
       {
         "name": "Focus 02",
         "size": "8.25",
         "price": "$66",
-        "badge": "Mid"
+        "badge": "Mid",
+        "image": "/assets/coming-soon.svg",
+        "link": "https://focusskateco.myshopify.com"
       },
       {
         "name": "Focus 03",
-        "size": "8.5",
+        "size": "8.25",
         "price": "$68",
-        "badge": "Wide"
+        "badge": "Wide",
+        "image": "/assets/coming-soon.svg",
+        "link": "https://focusskateco.myshopify.com"
       }
     ],
     "shirts": [
@@ -58,19 +67,28 @@
         "name": "Focus Mark Tee",
         "size": "S-XL",
         "price": "$32",
-        "badge": "Heavyweight"
+        "badge": "Heavyweight",
+        "image": "/assets/coming-soon.svg",
+        "link": "https://focusskateco.myshopify.com"
       },
       {
         "name": "Focus Bar Tee",
         "size": "S-XL",
         "price": "$32",
-        "badge": "Boxy"
+        "badge": "Boxy",
+        "image": "/assets/coming-soon.svg",
+        "link": "https://focusskateco.myshopify.com"
       }
     ],
     "cta": {
-      "label": "Email to order",
-      "href": "mailto:orders@focusskateco.com"
+      "label": "Shopify Store",
+      "href": "https://focusskateco.myshopify.com"
     }
+  },
+  "newsletter": {
+    "headline": "Drop Alerts",
+    "copy": "Mailchimp signup coming soon. Join the list for first access.",
+    "mailchimp_url": "https://mailchimp.com"
   },
   "contact": {
     "headline": "Contact",

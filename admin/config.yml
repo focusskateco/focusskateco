@@ -48,6 +48,9 @@ collections:
             fields:
               - { label: "Headline", name: "headline", widget: "string" }
               - { label: "Subhead", name: "subhead", widget: "string" }
+              - { label: "Shopify URL", name: "shopify_url", widget: "string" }
+              - { label: "Coming Soon Image", name: "coming_soon_image", widget: "image" }
+              - { label: "Coming Soon Copy", name: "coming_soon_copy", widget: "text" }
               - label: "Decks"
                 name: "decks"
                 widget: "list"
@@ -56,6 +59,8 @@ collections:
                   - { label: "Size", name: "size", widget: "string" }
                   - { label: "Price", name: "price", widget: "string" }
                   - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Link", name: "link", widget: "string" }
               - label: "Shirts"
                 name: "shirts"
                 widget: "list"
@@ -64,12 +69,21 @@ collections:
                   - { label: "Size", name: "size", widget: "string" }
                   - { label: "Price", name: "price", widget: "string" }
                   - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Link", name: "link", widget: "string" }
               - label: "CTA"
                 name: "cta"
                 widget: "object"
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
+          - label: "Newsletter"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Copy", name: "copy", widget: "text" }
+              - { label: "Mailchimp URL", name: "mailchimp_url", widget: "string" }
           - label: "Contact"
             name: "contact"
             widget: "object"

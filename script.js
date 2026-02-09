@@ -49,7 +49,8 @@ async function loadContent() {
     if (deckList && data.shop && data.shop.decks) {
       deckList.innerHTML = data.shop.decks
         .map((deck) => {
-          return `<div class="list-item"><div><strong>${deck.name}</strong> <span class="badge">${deck.size}</span></div><div><span class="badge">${deck.badge}</span> ${deck.price}</div></div>`;
+          const link = deck.link || data.shop.shopify_url || "#";
+          return `<div class="product-card"><img src="${deck.image}" alt="${deck.name}" /><div><strong>${deck.name}</strong></div><div class="product-meta"><span class="badge">${deck.size}</span><span class="badge">${deck.badge}</span></div><div class="product-meta"><span>${deck.price}</span><a class="button" href="${link}">View</a></div></div>`;
         })
         .join("");
     }
@@ -58,7 +59,8 @@ async function loadContent() {
     if (shirtList && data.shop && data.shop.shirts) {
       shirtList.innerHTML = data.shop.shirts
         .map((shirt) => {
-          return `<div class="list-item"><div><strong>${shirt.name}</strong> <span class="badge">${shirt.size}</span></div><div><span class="badge">${shirt.badge}</span> ${shirt.price}</div></div>`;
+          const link = shirt.link || data.shop.shopify_url || "#";
+          return `<div class="product-card"><img src="${shirt.image}" alt="${shirt.name}" /><div><strong>${shirt.name}</strong></div><div class="product-meta"><span class="badge">${shirt.size}</span><span class="badge">${shirt.badge}</span></div><div class="product-meta"><span>${shirt.price}</span><a class="button" href="${link}">View</a></div></div>`;
         })
         .join("");
     }

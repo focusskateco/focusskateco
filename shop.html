@@ -35,8 +35,21 @@
 
       <section class="container section split">
         <div>
+          <h2>Coming Soon</h2>
+          <p data-bind="shop.coming_soon_copy" class="badge">Full drop landing soon. Tap in to Shopify for early access.</p>
+          <div class="hero-actions">
+            <a class="button filled" data-bind="shop.cta.label" data-href="shop.cta.href" href="https://focusskateco.myshopify.com">Shopify Store</a>
+          </div>
+        </div>
+        <div class="media-card">
+          <img data-bind="shop.coming_soon_image" src="/assets/coming-soon.svg" alt="Coming soon" />
+        </div>
+      </section>
+
+      <section class="container section split">
+        <div>
           <h2>Decks</h2>
-          <div class="listing" data-decks>
+          <div class="product-grid" data-decks>
             <div class="list-item">
               <div><strong>Focus 01</strong> <span class="badge">8.0</span></div>
               <div><span class="badge">Classic</span> $64</div>
@@ -45,7 +58,7 @@
         </div>
         <div>
           <h2>Shirts</h2>
-          <div class="listing" data-shirts>
+          <div class="product-grid" data-shirts>
             <div class="list-item">
               <div><strong>Focus Mark Tee</strong> <span class="badge">S-XL</span></div>
               <div><span class="badge">Heavyweight</span> $32</div>
