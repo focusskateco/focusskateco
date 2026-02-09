@@ -259,22 +259,22 @@ body[data-hero="glitch"] .v-glitch {
 
 .sticker {
   position: absolute;
-  padding: 10px 16px;
+  padding: 14px 22px;
   border: 1px solid #2e2e2e;
   border-radius: 999px;
   background: rgba(10, 10, 10, 0.9);
   font-family: var(--font-head);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   box-shadow: var(--shadow);
 }
 
-.sticker.s1 { top: 20px; left: 20px; transform: rotate(-6deg); }
-.sticker.s2 { top: 80px; right: 40px; transform: rotate(7deg); }
-.sticker.s3 { bottom: 80px; left: 60px; transform: rotate(4deg); }
-.sticker.s4 { bottom: 40px; right: 80px; transform: rotate(-8deg); }
-.sticker.s5 { top: 50%; left: 45%; transform: translate(-50%, -50%) rotate(-2deg); }
+.sticker.s1 { top: 18px; left: 20px; transform: rotate(-6deg); }
+.sticker.s2 { top: 90px; right: 30px; transform: rotate(7deg); }
+.sticker.s3 { bottom: 90px; left: 60px; transform: rotate(4deg); }
+.sticker.s4 { bottom: 36px; right: 70px; transform: rotate(-8deg); }
+.sticker.s5 { top: 52%; left: 45%; transform: translate(-50%, -50%) rotate(-2deg); }
 
 .v-blueprint {
   place-items: center;
