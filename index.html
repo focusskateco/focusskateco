@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Skate Co. | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo" href="/index.html">
+          <img src="/assets/logo.png" alt="Focus Skate Co." />
+          <span data-bind="brand.name">Focus Skate Co.</span>
+        </a>
+        <nav class="tabs" data-nav>
+          <a class="tab active" href="/index.html">Home</a>
+          <a class="tab" href="/shop.html">Shop</a>
+          <a class="tab" href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container hero">
+        <div>
+          <p class="badge" data-bind="brand.tagline">Hold the line. Break the pattern.</p>
+          <h1 data-bind="home.hero_title">All black. All focus.</h1>
+          <p data-bind="home.hero_copy">
+            A focused line of decks and shirts built for street, park, and everything between. Minimal color, maximum intent.
+          </p>
+          <div class="hero-actions">
+            <a class="button filled" data-bind="home.cta_primary" data-href="home.cta_primary_href" href="/shop.html">Shop Decks</a>
+            <a class="button" data-bind="home.cta_secondary" data-href="home.cta_secondary_href" href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <div class="deck"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Focus System</h2>
+          <div class="grid-3" data-features>
+            <div class="card">
+              <h3>Decks</h3>
+              <p>7-ply maple, responsive concave, clean graphics. Built for speed and control.</p>
+            </div>
+            <div class="card">
+              <h3>Shirts</h3>
+              <p>Heavyweight cotton, sharp fits, no noise. Wear it like armor.</p>
+            </div>
+            <div class="card">
+              <h3>Team</h3>
+              <p>Built by local riders. Tested in the streets and pushed to the limit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span data-bind="brand.name">Focus Skate Co.</span> — All black. All focus.</div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

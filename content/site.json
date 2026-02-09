@@ -1,0 +1,82 @@
+{
+  "brand": {
+    "name": "Focus Skate Co.",
+    "tagline": "Hold the line. Break the pattern."
+  },
+  "nav": [
+    { "label": "Home", "href": "/index.html" },
+    { "label": "Shop", "href": "/shop.html" },
+    { "label": "Contact", "href": "/contact.html" }
+  ],
+  "home": {
+    "hero_title": "All black. All focus.",
+    "hero_copy": "A focused line of decks and shirts built for street, park, and everything between. Minimal color, maximum intent.",
+    "cta_primary": "Shop Decks",
+    "cta_primary_href": "/shop.html",
+    "cta_secondary": "Contact",
+    "cta_secondary_href": "/contact.html",
+    "feature_blocks": [
+      {
+        "title": "Decks",
+        "copy": "7-ply maple, responsive concave, clean graphics. Built for speed and control."
+      },
+      {
+        "title": "Shirts",
+        "copy": "Heavyweight cotton, sharp fits, no noise. Wear it like armor."
+      },
+      {
+        "title": "Team",
+        "copy": "Built by local riders. Tested in the streets and pushed to the limit."
+      }
+    ]
+  },
+  "shop": {
+    "headline": "Shop",
+    "subhead": "Decks and shirts. Tight drops. No clutter.",
+    "decks": [
+      {
+        "name": "Focus 01",
+        "size": "8.0",
+        "price": "$64",
+        "badge": "Classic"
+      },
+      {
+        "name": "Focus 02",
+        "size": "8.25",
+        "price": "$66",
+        "badge": "Mid"
+      },
+      {
+        "name": "Focus 03",
+        "size": "8.5",
+        "price": "$68",
+        "badge": "Wide"
+      }
+    ],
+    "shirts": [
+      {
+        "name": "Focus Mark Tee",
+        "size": "S-XL",
+        "price": "$32",
+        "badge": "Heavyweight"
+      },
+      {
+        "name": "Focus Bar Tee",
+        "size": "S-XL",
+        "price": "$32",
+        "badge": "Boxy"
+      }
+    ],
+    "cta": {
+      "label": "Email to order",
+      "href": "mailto:orders@focusskateco.com"
+    }
+  },
+  "contact": {
+    "headline": "Contact",
+    "subhead": "Hit us with collabs, shop orders, or team interest.",
+    "email": "hello@focusskateco.com",
+    "instagram": "@focusskateco",
+    "location": "USA"
+  }
+}

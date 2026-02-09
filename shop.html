@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Skate Co. | Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo" href="/index.html">
+          <img src="/assets/logo.png" alt="Focus Skate Co." />
+          <span data-bind="brand.name">Focus Skate Co.</span>
+        </a>
+        <nav class="tabs" data-nav>
+          <a class="tab" href="/index.html">Home</a>
+          <a class="tab active" href="/shop.html">Shop</a>
+          <a class="tab" href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h2 data-bind="shop.headline">Shop</h2>
+        <p data-bind="shop.subhead" class="badge">Decks and shirts. Tight drops. No clutter.</p>
+      </section>
+
+      <section class="container section split">
+        <div>
+          <h2>Decks</h2>
+          <div class="listing" data-decks>
+            <div class="list-item">
+              <div><strong>Focus 01</strong> <span class="badge">8.0</span></div>
+              <div><span class="badge">Classic</span> $64</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2>Shirts</h2>
+          <div class="listing" data-shirts>
+            <div class="list-item">
+              <div><strong>Focus Mark Tee</strong> <span class="badge">S-XL</span></div>
+              <div><span class="badge">Heavyweight</span> $32</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <a class="button filled" data-bind="shop.cta.label" data-href="shop.cta.href" href="mailto:orders@focusskateco.com">Email to order</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span data-bind="brand.name">Focus Skate Co.</span> — Built to ride.</div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

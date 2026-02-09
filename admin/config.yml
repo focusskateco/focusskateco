@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+site_url: "https://focusskateco2026.netlify.app"
+display_url: "https://focusskateco2026.netlify.app"
+local_backend: true
+media_folder: "assets"
+public_folder: "/assets"
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "main"
+        label: "Main Content"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Brand", name: "brand", widget: "object", fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Tagline", name: "tagline", widget: "string" }
+            ]
+          }
+          - label: "Navigation"
+            name: "nav"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Href", name: "href", widget: "string" }
+          - label: "Home"
+            name: "home"
+            widget: "object"
+            fields:
+              - { label: "Hero Title", name: "hero_title", widget: "string" }
+              - { label: "Hero Copy", name: "hero_copy", widget: "text" }
+              - { label: "CTA Primary", name: "cta_primary", widget: "string" }
+              - { label: "CTA Primary Href", name: "cta_primary_href", widget: "string" }
+              - { label: "CTA Secondary", name: "cta_secondary", widget: "string" }
+              - { label: "CTA Secondary Href", name: "cta_secondary_href", widget: "string" }
+              - label: "Feature Blocks"
+                name: "feature_blocks"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Copy", name: "copy", widget: "text" }
+          - label: "Shop"
+            name: "shop"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "string" }
+              - label: "Decks"
+                name: "decks"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Size", name: "size", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Badge", name: "badge", widget: "string" }
+              - label: "Shirts"
+                name: "shirts"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Size", name: "size", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Badge", name: "badge", widget: "string" }
+              - label: "CTA"
+                name: "cta"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Href", name: "href", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subhead", name: "subhead", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Skate Co. | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <a class="logo" href="/index.html">
+          <img src="/assets/logo.png" alt="Focus Skate Co." />
+          <span data-bind="brand.name">Focus Skate Co.</span>
+        </a>
+        <nav class="tabs" data-nav>
+          <a class="tab" href="/index.html">Home</a>
+          <a class="tab" href="/shop.html">Shop</a>
+          <a class="tab active" href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section">
+        <h2 data-bind="contact.headline">Contact</h2>
+        <p data-bind="contact.subhead" class="badge">Hit us with collabs, shop orders, or team interest.</p>
+
+        <div class="contact-block">
+          <div>
+            <span>Email</span>
+            <div><a data-bind="contact.email" data-href="contact.email" href="mailto:hello@focusskateco.com">hello@focusskateco.com</a></div>
+          </div>
+          <div>
+            <span>Instagram</span>
+            <div data-bind="contact.instagram">@focusskateco</div>
+          </div>
+          <div>
+            <span>Location</span>
+            <div data-bind="contact.location">USA</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© <span data-bind="brand.name">Focus Skate Co.</span> — Stay focused.</div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
