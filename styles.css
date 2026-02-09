@@ -191,6 +191,12 @@ header::after {
   text-shadow: none;
 }
 
+.button.ghost {
+  background: transparent;
+  color: var(--fg);
+  border-color: #3a3a3a;
+}
+
 .button:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);

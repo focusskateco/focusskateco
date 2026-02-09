@@ -27,6 +27,23 @@ async function loadContent() {
       }
     });
 
+    document.querySelectorAll("[data-copy]").forEach((el) => {
+      el.addEventListener("click", async () => {
+        const path = el.getAttribute("data-copy");
+        const value = path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), data);
+        if (!value) return;
+        try {
+          await navigator.clipboard.writeText(value);
+          el.textContent = "Copied";
+          setTimeout(() => {
+            el.textContent = "Copy Email";
+          }, 1500);
+        } catch (err) {
+          console.error("Copy failed", err);
+        }
+      });
+    });
+
     const nav = document.querySelector("[data-nav]");
     if (nav && data.nav) {
       const path = window.location.pathname;
