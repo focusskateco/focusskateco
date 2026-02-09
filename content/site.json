@@ -55,6 +55,14 @@
         "link": "https://focusskateco.myshopify.com"
       },
       {
+        "name": "Focus Jersey 5",
+        "size": "8.25",
+        "price": "$68",
+        "badge": "Jersey",
+        "image": "/assets/deck-jersey-5.svg",
+        "link": "https://focusskateco.myshopify.com"
+      },
+      {
         "name": "Focus 03",
         "size": "8.25",
         "price": "$68",
