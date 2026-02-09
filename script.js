@@ -6,6 +6,10 @@ async function loadContent() {
     }
     const data = await response.json();
 
+    if (data.home && data.home.hero_style) {
+      document.body.setAttribute("data-hero", data.home.hero_style);
+    }
+
     document.querySelectorAll("[data-bind]").forEach((el) => {
       const path = el.getAttribute("data-bind");
       const value = path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), data);

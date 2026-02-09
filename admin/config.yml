@@ -32,6 +32,14 @@ collections:
             fields:
               - { label: "Hero Title", name: "hero_title", widget: "string" }
               - { label: "Hero Copy", name: "hero_copy", widget: "text" }
+              - label: "Hero Style"
+                name: "hero_style"
+                widget: "select"
+                options:
+                  - { label: "Typographic Wall", value: "typo" }
+                  - { label: "Sticker Bomb", value: "sticker" }
+                  - { label: "Deck Blueprint", value: "blueprint" }
+                  - { label: "Glitch Slab", value: "glitch" }
               - { label: "CTA Primary", name: "cta_primary", widget: "string" }
               - { label: "CTA Primary Href", name: "cta_primary_href", widget: "string" }
               - { label: "CTA Secondary", name: "cta_secondary", widget: "string" }

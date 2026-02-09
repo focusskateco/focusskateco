@@ -208,6 +208,162 @@ header::after {
   overflow: hidden;
 }
 
+.hero-art {
+  align-content: stretch;
+  justify-items: stretch;
+}
+
+.hero-variant {
+  position: absolute;
+  inset: 0;
+  display: none;
+  padding: 28px;
+}
+
+body[data-hero="typo"] .v-typo,
+body[data-hero="sticker"] .v-sticker,
+body[data-hero="blueprint"] .v-blueprint,
+body[data-hero="glitch"] .v-glitch {
+  display: grid;
+}
+
+.v-typo {
+  align-content: center;
+  gap: 18px;
+}
+
+.typo-stack {
+  display: grid;
+  gap: 8px;
+  font-family: var(--font-head);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.typo-stack span:nth-child(2) { opacity: 0.6; }
+.typo-stack span:nth-child(3) { opacity: 0.35; }
+.typo-stack span:nth-child(4) { opacity: 0.2; letter-spacing: 0.4em; }
+
+.micro-lines {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.v-sticker {
+  position: relative;
+}
+
+.sticker {
+  position: absolute;
+  padding: 10px 16px;
+  border: 1px solid #2e2e2e;
+  border-radius: 999px;
+  background: rgba(10, 10, 10, 0.9);
+  font-family: var(--font-head);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+}
+
+.sticker.s1 { top: 20px; left: 20px; transform: rotate(-6deg); }
+.sticker.s2 { top: 80px; right: 40px; transform: rotate(7deg); }
+.sticker.s3 { bottom: 80px; left: 60px; transform: rotate(4deg); }
+.sticker.s4 { bottom: 40px; right: 80px; transform: rotate(-8deg); }
+.sticker.s5 { top: 50%; left: 45%; transform: translate(-50%, -50%) rotate(-2deg); }
+
+.v-blueprint {
+  place-items: center;
+  background: linear-gradient(145deg, #0a0a0a, #101010);
+}
+
+.blueprint-deck {
+  width: 180px;
+  height: 320px;
+  border-radius: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+.blueprint-deck::before,
+.blueprint-deck::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  width: 1px;
+  height: 360px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.blueprint-deck::after {
+  left: -30px;
+  top: 50%;
+  width: 240px;
+  height: 1px;
+}
+
+.bp-label {
+  position: absolute;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bp-1 { top: 24px; left: 28px; }
+.bp-2 { bottom: 24px; right: 30px; }
+.bp-3 { top: 50%; right: 20px; }
+
+.v-glitch {
+  place-items: center;
+  background: #080808;
+}
+
+.glitch-text {
+  position: relative;
+  font-family: var(--font-head);
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+}
+
+.glitch-text::before {
+  transform: translate(2px, -2px);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.glitch-text::after {
+  transform: translate(-2px, 2px);
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
 .deck {
   width: 160px;
   height: 340px;
