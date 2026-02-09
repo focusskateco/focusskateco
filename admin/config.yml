@@ -77,6 +77,13 @@ collections:
                 fields:
                   - { label: "Label", name: "label", widget: "string" }
                   - { label: "Href", name: "href", widget: "string" }
+          - label: "Newsletter"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Copy", name: "copy", widget: "text" }
+              - { label: "Mailchimp URL", name: "mailchimp_url", widget: "string" }
           - label: "Contact"
             name: "contact"
             widget: "object"

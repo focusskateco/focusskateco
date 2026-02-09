@@ -85,6 +85,11 @@
       "href": "https://focusskateco.myshopify.com"
     }
   },
+  "newsletter": {
+    "headline": "Drop Alerts",
+    "copy": "Mailchimp signup coming soon. Join the list for first access.",
+    "mailchimp_url": "https://mailchimp.com"
+  },
   "contact": {
     "headline": "Contact",
     "subhead": "Hit us with collabs, shop orders, or team interest.",

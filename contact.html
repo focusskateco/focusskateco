@@ -16,6 +16,7 @@
     <header>
       <div class="container header-inner">
         <a class="logo" href="/index.html">
+          <img src="/assets/logo.png" alt="Focus Skate Co." />
           <span data-bind="brand.name">Focus Skate Co.</span>
         </a>
         <nav class="tabs" data-nav>
@@ -43,6 +44,16 @@
           <div>
             <span>Location</span>
             <div data-bind="contact.location">USA</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="newsletter">
+          <h2 data-bind="newsletter.headline">Drop Alerts</h2>
+          <p data-bind="newsletter.copy">Mailchimp signup coming soon. Join the list for first access.</p>
+          <div class="hero-actions">
+            <a class="button" data-bind="newsletter.mailchimp_url" data-href="newsletter.mailchimp_url" href="https://mailchimp.com">Join Newsletter</a>
           </div>
         </div>
       </section>
