@@ -255,6 +255,9 @@ body[data-hero="glitch"] .v-glitch {
 
 .v-sticker {
   position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='160' viewBox='0 0 240 160'><rect width='240' height='160' fill='%23080808'/><g stroke='%23222222' stroke-width='2'><rect x='10' y='10' width='70' height='30' rx='4'/><rect x='90' y='10' width='70' height='30' rx='4'/><rect x='170' y='10' width='60' height='30' rx='4'/><rect x='0' y='50' width='60' height='30' rx='4'/><rect x='70' y='50' width='70' height='30' rx='4'/><rect x='150' y='50' width='70' height='30' rx='4'/><rect x='30' y='90' width='70' height='30' rx='4'/><rect x='110' y='90' width='70' height='30' rx='4'/><rect x='190' y='90' width='40' height='30' rx='4'/></g></svg>");
+  background-repeat: repeat;
+  background-size: 240px 160px;
 }
 
 .sticker {
