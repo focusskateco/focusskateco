@@ -1,0 +1,32 @@
+<svg width="1600" height="800" viewBox="0 0 1600 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="800" fill="#000"/>
+  <g fill="#fff" font-family="Impact, Arial Black, sans-serif" font-size="180" letter-spacing="10">
+    <text x="120" y="320">FOCUS</text>
+  </g>
+  <g fill="#fff" font-family="Oswald, Arial, sans-serif" font-size="80" letter-spacing="8">
+    <text x="120" y="420">SKATE CO.</text>
+  </g>
+  <!-- Barbed wire through wordmark -->
+  <g stroke="#fff" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.9">
+    <line x1="80" y1="260" x2="1520" y2="260" />
+  </g>
+  <g stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.9">
+    <path d="M200 260 l22 -14 M200 260 l22 14" />
+    <path d="M380 260 l22 -14 M380 260 l22 14" />
+    <path d="M560 260 l22 -14 M560 260 l22 14" />
+    <path d="M740 260 l22 -14 M740 260 l22 14" />
+    <path d="M920 260 l22 -14 M920 260 l22 14" />
+    <path d="M1100 260 l22 -14 M1100 260 l22 14" />
+    <path d="M1280 260 l22 -14 M1280 260 l22 14" />
+  </g>
+  <!-- Grunge speckle -->
+  <g fill="#fff" opacity="0.08">
+    <circle cx="120" cy="600" r="6" />
+    <circle cx="260" cy="620" r="4" />
+    <circle cx="420" cy="650" r="5" />
+    <circle cx="720" cy="610" r="3" />
+    <circle cx="980" cy="640" r="6" />
+    <circle cx="1200" cy="670" r="4" />
+    <circle cx="1380" cy="610" r="5" />
+  </g>
+</svg>
